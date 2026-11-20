@@ -1,0 +1,4 @@
+# offline training / validation only (not needed to run main.py)
+torch
+pandas
+matplotlib

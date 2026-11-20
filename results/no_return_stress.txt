@@ -1,0 +1,3 @@
+Stress test: EuRoC flights truncated at 65% (drone mid-air, up to 11 m from launch), organiser degradation, held-out folds
+final (with rotor drag and rest updates) {'B': {'ate': 2.54, 'blind': 3.842}, 'A': {'ate': 2.577, 'blind': 3.619}}
+stand-still baseline: ATE 3.567 m, blind 4.226 m

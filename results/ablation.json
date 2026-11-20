@@ -1,0 +1,172 @@
+{
+ "full": {
+  "ate": 2.028,
+  "wp": 2.033,
+  "blind": 1.767,
+  "rpe": 0.445,
+  "per_seq": {
+   "MH_01_easy": 2.1,
+   "MH_02_easy": 2.877,
+   "MH_03_medium": 2.565,
+   "MH_04_difficult": 2.935,
+   "MH_05_difficult": 3.108,
+   "V1_01_easy": 1.491,
+   "V1_02_medium": 1.2,
+   "V1_03_difficult": 1.351,
+   "V2_01_easy": 1.518,
+   "V2_02_medium": 1.719,
+   "V2_03_difficult": 1.44
+  }
+ },
+ "no_zupt": {
+  "ate": 2.052,
+  "wp": 2.055,
+  "blind": 1.874,
+  "rpe": 0.45,
+  "per_seq": {
+   "MH_01_easy": 2.095,
+   "MH_02_easy": 2.874,
+   "MH_03_medium": 2.583,
+   "MH_04_difficult": 2.944,
+   "MH_05_difficult": 3.172,
+   "V1_01_easy": 1.491,
+   "V1_02_medium": 1.315,
+   "V1_03_difficult": 1.423,
+   "V2_01_easy": 1.518,
+   "V2_02_medium": 1.719,
+   "V2_03_difficult": 1.44
+  }
+ },
+ "no_net_no_zupt": {
+  "ate": 3.438,
+  "wp": 3.43,
+  "blind": 3.144,
+  "rpe": 0.565,
+  "per_seq": {
+   "MH_01_easy": 4.85,
+   "MH_02_easy": 7.171,
+   "MH_03_medium": 5.042,
+   "MH_04_difficult": 4.851,
+   "MH_05_difficult": 4.628,
+   "V1_01_easy": 1.902,
+   "V1_02_medium": 2.105,
+   "V1_03_difficult": 1.474,
+   "V2_01_easy": 1.782,
+   "V2_02_medium": 1.532,
+   "V2_03_difficult": 2.484
+  }
+ },
+ "no_drag": {
+  "ate": 2.457,
+  "wp": 2.476,
+  "blind": 2.094,
+  "rpe": 0.513,
+  "per_seq": {
+   "MH_01_easy": 2.938,
+   "MH_02_easy": 3.069,
+   "MH_03_medium": 2.895,
+   "MH_04_difficult": 3.182,
+   "MH_05_difficult": 3.176,
+   "V1_01_easy": 1.98,
+   "V1_02_medium": 2.213,
+   "V1_03_difficult": 1.775,
+   "V2_01_easy": 1.682,
+   "V2_02_medium": 2.045,
+   "V2_03_difficult": 2.077
+  }
+ },
+ "no_net": {
+  "ate": 2.419,
+  "wp": 2.42,
+  "blind": 1.804,
+  "rpe": 0.508,
+  "per_seq": {
+   "MH_01_easy": 2.31,
+   "MH_02_easy": 3.564,
+   "MH_03_medium": 2.716,
+   "MH_04_difficult": 3.375,
+   "MH_05_difficult": 3.497,
+   "V1_01_easy": 1.902,
+   "V1_02_medium": 2.062,
+   "V1_03_difficult": 1.389,
+   "V2_01_easy": 1.782,
+   "V2_02_medium": 1.532,
+   "V2_03_difficult": 2.484
+  }
+ },
+ "no_net_no_drag": {
+  "ate": 3.195,
+  "wp": 3.192,
+  "blind": 2.973,
+  "rpe": 0.579,
+  "per_seq": {
+   "MH_01_easy": 3.964,
+   "MH_02_easy": 4.472,
+   "MH_03_medium": 3.124,
+   "MH_04_difficult": 6.453,
+   "MH_05_difficult": 6.479,
+   "V1_01_easy": 1.742,
+   "V1_02_medium": 1.309,
+   "V1_03_difficult": 1.328,
+   "V2_01_easy": 2.04,
+   "V2_02_medium": 1.956,
+   "V2_03_difficult": 2.275
+  }
+ },
+ "no_return_to_launch": {
+  "ate": 2.708,
+  "wp": 2.65,
+  "blind": 3.714,
+  "rpe": 0.455,
+  "per_seq": {
+   "MH_01_easy": 3.706,
+   "MH_02_easy": 3.053,
+   "MH_03_medium": 3.009,
+   "MH_04_difficult": 3.917,
+   "MH_05_difficult": 3.997,
+   "V1_01_easy": 2.961,
+   "V1_02_medium": 1.591,
+   "V1_03_difficult": 1.871,
+   "V2_01_easy": 2.19,
+   "V2_02_medium": 1.794,
+   "V2_03_difficult": 1.699
+  }
+ },
+ "physics_only_no_rtl": {
+  "ate": 3.183,
+  "wp": 3.181,
+  "blind": 2.952,
+  "rpe": 0.559,
+  "per_seq": {
+   "MH_01_easy": 4.096,
+   "MH_02_easy": 4.25,
+   "MH_03_medium": 3.118,
+   "MH_04_difficult": 6.467,
+   "MH_05_difficult": 6.473,
+   "V1_01_easy": 1.696,
+   "V1_02_medium": 1.346,
+   "V1_03_difficult": 1.311,
+   "V2_01_easy": 2.14,
+   "V2_02_medium": 1.794,
+   "V2_03_difficult": 2.328
+  }
+ },
+ "stress_no_return": {
+  "B": {
+   "ate": 2.54,
+   "blind": 3.842,
+   "zero": 3.567,
+   "blind0": 4.226
+  },
+  "A": {
+   "ate": 2.577,
+   "blind": 3.619,
+   "zero": 3.567,
+   "blind0": 4.226
+  }
+ },
+ "naive_strapdown": {
+  "B": 99.21855258777546,
+  "A": 370.92075482653803
+ }
+}

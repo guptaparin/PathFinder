@@ -1,0 +1,20 @@
+{
+ "protocol": "leave-two-rooms-out: smoother settings re-tuned on 4 rooms, scored on the 2 held out (tools/tune_room.py cv)",
+ "heldout_mean_ATE_m": {
+  "B": 0.626,
+  "A": 0.626
+ },
+ "heldout_mean_blind_m": {
+  "B": 0.696,
+  "A": 0.68
+ },
+ "tuned_on_all_rooms_ATE_m": {
+  "B": 0.609,
+  "A": 0.615
+ },
+ "stand_still_m": 1.097,
+ "previous_handheld_profile_ATE_m": {
+  "B": 0.895,
+  "A": 0.874
+ }
+}

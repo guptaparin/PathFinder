@@ -1,0 +1,108 @@
+{
+  "team": "DEADLOCK",
+  "track": "Track 03 - Path Finder",
+  "project": "PathFinder",
+  "sample_input": "EuRoC MAV MH_01_easy imu0/data.csv degraded with organiser degrade_imu.py as-is (seed 42, max_level 1.0)",
+  "entrypoint": "python src/main.py <imu0/data.csv | folder | zip> [-o] estimated_trajectory.txt  (no input: auto-detects imu0/data.csv in the working directory)",
+  "language": "Python 3 + numpy only; single CPU thread (BLAS pinned); offline",
+  "runtime": {
+    "seconds": 1.285,
+    "ms_per_imu_second": 6.98,
+    "budget_ms_per_imu_second": 20,
+    "threads": 1,
+    "note": "wall time incl. CSV parse and output write, warm run, numpy 2.x; 6-8 ms on repeated runs of this machine"
+  },
+  "memory": {
+    "peak_heap_MB": 3.558,
+    "budget_MB": 8,
+    "method": "tracemalloc peak after interpreter + module imports (per FAQ), includes model weights; MB = 10^6 bytes",
+    "peak_heap_MiB": 3.393
+  },
+  "compute": {
+    "cpu": "x86_64",
+    "python": "3.13.18",
+    "numpy": "2.5.3"
+  },
+  "model": {
+    "velocity_network": "ensemble of 3 1-D CNNs (4 s window @ 50 Hz, ~120k params each), velocity-NLL training then integrated-displacement fine-tuning; float16 weights (0.73 MB)",
+    "rotor_drag": "body-frame drag velocity on the thrust-perpendicular plane, 0.4 s blocks, rotor-vibration gate, Cauchy IRLS; gains fitted per CV fold",
+    "rest_updates": "zero-velocity updates while parked with rotors off (steady |a|, low rotor vibration); drag channel off there"
+  },
+  "run_stats": {
+    "rows": 35629,
+    "duplicates": 49,
+    "dead": 1002,
+    "stuck": 487,
+    "spikes": 204,
+    "blind_s": 5.005000064000001,
+    "duration_s": 184.095000064,
+    "gyro_noise": 0.07776845437808759,
+    "kp": 3.0,
+    "euroc_profile": true,
+    "net": true,
+    "rest_s": 11.05
+  },
+  "validation_heldout_11_euroc_sequences": {
+    "protocol": "3-fold grouped cross-validation by sequence (no sequence scored by a model that saw it); SE(3) Umeyama ATE, verified identical to evo_ape",
+    "mode_B_columns_reordered": {
+      "ATE_m": 1.961,
+      "waypoints_m": 1.971,
+      "blind5s_m": 1.744,
+      "post_dropout_m": 2.019,
+      "RPE_1s_m": 0.405,
+      "stand_still_baseline_m": 3.448
+    },
+    "mode_A_script_as_is": {
+      "ATE_m": 2.092,
+      "waypoints_m": 2.093,
+      "blind5s_m": 1.799,
+      "post_dropout_m": 2.242,
+      "RPE_1s_m": 0.494,
+      "stand_still_baseline_m": 3.448
+    },
+    "naive_double_integration_ATE_m": {
+      "B": 99.2,
+      "A": 370.9
+    },
+    "no_return_stress_test": {
+      "setup": "flights truncated at 65% (drone mid-air, up to 11 m from launch)",
+      "ATE_m": {
+        "B": 2.54,
+        "A": 2.577
+      },
+      "blind5s_m": {
+        "B": 3.842,
+        "A": 3.619
+      },
+      "stand_still_ATE_m": 3.567,
+      "stand_still_blind_m": 4.226
+    },
+    "every_flight_beats_stand_still": true
+  },
+  "validation_tumvi_6_rooms": {
+    "note": "handheld/generic profile: workspace-bounded smoother, physics only (network and drag off); held-out-room CV ATE 0.626 m",
+    "mode_B": {
+      "ATE_m": 0.609,
+      "waypoints_m": 0.594,
+      "blind5s_m": 0.679,
+      "stand_still_m": 1.097
+    },
+    "mode_A": {
+      "ATE_m": 0.615,
+      "waypoints_m": 0.611,
+      "blind5s_m": 0.661,
+      "stand_still_m": 1.097
+    },
+    "every_room_beats_stand_still": true
+  },
+  "college": "Thapar Institute of Engineering & Technology, Patiala (TIET)",
+  "members": [
+    {
+      "name": "Parin Gupta",
+      "role": "solo",
+      "program": "B.E. Computer Engineering (2025-29)"
+    }
+  ],
+  "repository": "https://github.com/guptaparin/PathFinder",
+  "demo_video": "https://github.com/guptaparin/PathFinder/blob/main/docs/PathFinder_demo.mp4"
+}
