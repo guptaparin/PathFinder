@@ -5,7 +5,7 @@
 ### IMU-only 6-DoF trajectory under progressive sensor degradation
 
 **Samsung PRISM XR Hackathon 2026 · Track 03 (Path Finder)**<br>
-**Team DEADLOCK** · Parin Gupta (solo) · B.E. Computer Engineering, Thapar Institute of Engineering & Technology, Patiala
+**Team DEADLOCK** · [Parin Gupta](https://github.com/guptaparin) (solo) · B.E. Computer Engineering, Thapar Institute of Engineering & Technology, Patiala
 
 ![Python](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)
 ![numpy only](https://img.shields.io/badge/dependencies-numpy%20only-013243?logo=numpy)
