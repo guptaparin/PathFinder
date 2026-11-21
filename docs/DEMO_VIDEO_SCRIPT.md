@@ -6,7 +6,7 @@ large font (≥ 18 pt) for the live run. Speak at a calm pace; each block below 
 ---
 
 **0:00–0:20 · Title slide**
-> "Hi, we're team ___ from Thapar Institute, Track 3, Path Finder. Our system, PathFinder, reconstructs a full
+> "Hi, I'm Parin Gupta, Team DEADLOCK, from Thapar Institute, Track 3, Path Finder. My system, PathFinder, reconstructs a full
 > 6-DoF trajectory from nothing but a jammed IMU file, including the 5 seconds after the sensor dies."
 
 **0:20–0:45 · Problem slide**

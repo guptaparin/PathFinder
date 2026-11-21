@@ -14,7 +14,7 @@
 ![held-out](https://img.shields.io/badge/EuRoC%20held--out%20ATE-1.96%20m%20(vs%203.45%20m%20still)-F5A524)
 ![tests](https://img.shields.io/badge/input%20robustness-23%2F23%20variants-2EA44F)
 
-[**▶ Demo video (2:27)**](../docs/PathFinder_demo.mp4) · [**Technical report (2 pages)**](../docs/PathFinder_technical_report.pdf) · [**Slides (PDF)**](../docs/PathFinder_slides.pdf) · [**Slides (PPTX)**](../docs/TIET_DEADLOCK.pptx) · [**Results**](../results/) · [**Interactive viewer**](../results/viewers/MH_03_heldout.html)
+[**▶ Demo video (2:50)**](../docs/PathFinder_demo.mp4) · [**Technical report (2 pages)**](../docs/PathFinder_technical_report.pdf) · [**Slides (PDF)**](../docs/PathFinder_slides.pdf) · [**Slides (PPTX)**](../docs/TIET_DEADLOCK.pptx) · [**Results**](../results/) · [**Interactive viewer**](../results/viewers/MH_03_heldout.html)
 
 <a href="../docs/PathFinder_demo.mp4"><img src="../docs/demo_poster.png" width="760" alt="PathFinder demo video"></a>
 
